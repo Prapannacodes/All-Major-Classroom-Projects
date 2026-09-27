@@ -1,0 +1,60 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+    <div class="row mt-3">
+        <div class="col-7 offset-3">
+            <!-- <br> <br> -->
+            <h2>Edit The Details of <b>
+                    <%= Listing.title %>
+                </b></h2>
+            <br>
+            <form action="/listings/<%= Listing._id %>?_method=PUT" method="post" novalidate class="needs-validation"
+                enctype="multipart/form-data">
+                <div class="mb-3 ">
+                    <label for="title" class="form-label">Edit Title</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="listing[title]"
+                        value="<%= Listing.title %>" required>
+                    <div class="invalid-feedback">*Required</div>
+                </div>
+                <div class="mb-3 ">
+                    <label for="textarea" class="form-label">Edit Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="listing[description]"
+                        placeholder="Enter Description" required><%= Listing.description %></textarea>
+                    <div class="invalid-feedback">*Required</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Old Image</label>
+                    <br>
+                    <img src="<%= originalImage %> " alt="image">
+                </div>
+
+                <div class="mb-3 ">
+                    <label for="image" class="form-label">Update Image</label>
+                    <input type="file" class="form-control" id="image" name="listing[image]">
+                </div>
+                <div class=" row">
+                    <div class="mb-3 col-md-3">
+                        <label for="location" class="form-label">Edit Location</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="listing[location]"
+                            value="<%= Listing.location %>" required>
+                        <div class="invalid-feedback">*Required</div>
+                    </div>
+                    <div class="mb-3 col-md-5">
+                        <label for="country" class="form-label">Edit Country</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="listing[country]"
+                            value="<%= Listing.country %>" required>
+                        <div class="invalid-feedback">*Required</div>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Enter price</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" name="listing[price]"
+                        value="<%= Listing.price %>" style="width: 400px !important;">
+                    <div class="invalid-feedback">*Enter Valid Price</div>
+                </div>
+                <button class="btn btn-dark clr">Edit</button>
+                <br> <br>
+            </form>
+        </div>
+    </div>

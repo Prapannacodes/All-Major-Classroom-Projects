@@ -1,0 +1,29 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+    <div class="row mt-3">
+        <h3 style="color: coral;" class="offset-5 col-6">User Signup on Nookify</h3>
+        <div class="col-7 offset-3">
+            <form action="/signup" method="post" class="needs-validation" novalidate>
+                <div class="mb-3 mt-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username"
+                        required>
+                    <div class="invalid-feedback">*Required</div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Username"
+                        required>
+                    <div class="invalid-feedback">*Required</div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password"
+                        placeholder="Enter Username" required>
+                    <div class="invalid-feedback">*Required</div>
+                </div>
+                <button class="btn btn-success clr">Signup</button>
+
+            </form>
+        </div>
+    </div>

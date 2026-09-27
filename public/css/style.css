@@ -1,0 +1,121 @@
+body {
+  background-color: #f9f6f0;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/*navbar */
+
+.navbar {
+  height: 5rem;
+  background-color: #f9f6f0;
+}
+
+.fa-couch {
+  color: coral;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #100000 !important;
+}
+
+/*footer*/
+
+.f-info-links a {
+  text-decoration: none;
+  color: #100000;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.f-info {
+  height: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+  justify-content: center;
+  align-items: space-evenly;
+  text-align: center;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/*cards*/
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem !important;
+}
+
+.rounded-start {
+  border-radius: 0.35rem !important;
+}
+
+/* .card-body {
+  padding: 0 !important;
+} */
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.show {
+  text-decoration: none;
+}
+
+/*overlar effect i.e card hover effect*/
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: #f9f6f0;
+}
+
+.clr {
+  background-color: coral !important;
+  border: none !important;
+  margin-right: 50px;
+}
+
+/*show page */
+
+.show-img {
+  height: 40vh;
+  border-radius: 0.55rem !important;
+}
+
+/* .card-body {
+  display: flex;
+} */
+
+
+/*Map*/
+#map {
+  height: 400px;
+  width: 80vh;
+}
