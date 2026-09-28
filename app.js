@@ -81,9 +81,9 @@ const sessionOptions = {
     httpOnly: true,
   },
 };
-// app.get("/", (req, res) => {
-//   res.send("All izz Well");
-// });
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 
 // use sessions
